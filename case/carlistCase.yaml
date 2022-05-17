@@ -1,0 +1,22 @@
+#注释 车辆列表接口测试用例
+-
+  url: carlist
+  method: POST
+
+- #test_01用例
+  detail: 查看车辆列表
+  data:
+    pageSize: 10
+    pageNumber: 1
+  resp:
+    code: 200
+    msg: '请求成功！'
+
+- #test_02用例
+  detail: 查看车辆列表
+  data:
+    pageSize: 20
+    pageNumber: 1
+  resp:
+    code: 200
+    msg: '请求成功！'
